@@ -40,7 +40,6 @@ body {
 
 .nav-bar a i {
     font-size: 1.18rem;
-    color: #7161ea;
 }
 
 .nav-bar a:hover, .nav-bar a.active {
@@ -154,11 +153,15 @@ html {
     justify-content: center;
 }
 
+.contact-item .icon i {
+    font-size: 1.5rem;
+}
+
 .main-content {
     display: flex;
     flex-wrap: nowrap;
     background: linear-gradient(120deg, #e3e8fa 0%, #fff 50%, #fff6f2 100%);
-    padding: 32px 0 32px 0;
+    padding: 32px 0 0 0;
 }
 
 .column {
@@ -205,19 +208,34 @@ html {
     list-style-type: circle;
 }
 
+.section.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 .hobbies {
     background: transparent;
     box-shadow: none;
 }
 
 .hobbies h2 {
-    margin-bottom: 8px;
-    border: none;
-    padding-bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .hobby-icons {
     display: flex;
+    justify-content: center;
     gap: 42px;
     align-items: center;
     margin-top: 8px;
@@ -233,6 +251,10 @@ html {
 
 .hobby .icon {
     margin-bottom: 5px;
+}
+
+.hobby .icon i {
+    font-size: 1.5rem;
 }
 
 @media (max-width: 900px) {
